@@ -1,0 +1,8 @@
+<div id="main" [ngClass]="[this.cssClass]">
+    <div id="wrapper">
+        <div *ngFor="let champion of championData; index as i" class="item">
+            <p class="title">{{champion.name}}{{i}}</p>
+        </div>
+    </div>
+</div>
+

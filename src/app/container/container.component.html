@@ -1,0 +1,10 @@
+<div id="main">
+    <div id="wrapper">
+        <h2>Tours of Champions</h2>
+        <button [ngClass]="['btn','btn-light',getStyle(0)]" (click)="changeView(0)">Dashboard</button>
+        <button [ngClass]="['btn','btn-light',getStyle(1)]" (click)="changeView(1)">Champions</button>
+        <div id="inner">
+            <app-dashboard [championData]="this.championData"></app-dashboard>
+        </div>
+    </div>
+</div>
